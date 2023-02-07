@@ -19,8 +19,8 @@ body{
 }
 
  header{
-    
-   padding: 2rem;
+
+    padding: 2rem;
     
 }
 nav{
@@ -61,7 +61,10 @@ nav{
     display: flex;
     flex-direction: column;
     align-items: center;
-    display: none;
+    overflow: hidden;
+    transition: all 0.5s;
+    /* z-index: 1; */
+    height: 0;
    
  }  
 
@@ -76,7 +79,7 @@ nav{
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     font-size: 1.6rem;
-    border-bottom: 1px solid #4b4949;  
+    border-bottom: 1px solid #4b4949ad;  
     
 }
 .container__register{
@@ -105,7 +108,10 @@ nav{
     font-weight: bold;
 
 }
-
+.nav__menu-list.active{
+   height: 18rem;
+    
+}
 
 
 
@@ -141,26 +147,30 @@ nav{
 
 
 
-/* 
+
 .hero{
-    border: 2px solid red;
-    padding: 20px;
-    background-color: blanchedalmond;
-    margin-top: 40px;
+    margin: auto;
+    width: 28rem;
+    height: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero__box{
     position: relative;
-    height: 100vh;
+    height: 27rem;
+    width: 27rem;
 }
 
 .hero__images{
     position: absolute;
-    width: 30rem;
+    width: 20.5rem;
+    right: 0.5rem;   
 }
 
 .hero__blue{
-    transform: rotate(-45.92deg);
-    
-    
-    
+    transform: rotate(-45.92deg);    
 }
 
 .hero__pink{
@@ -171,4 +181,4 @@ nav{
 .hero__purple{
     transform: rotate(-14.9deg);
     
-} */
+}
