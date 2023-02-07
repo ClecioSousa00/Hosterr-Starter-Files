@@ -1,0 +1,271 @@
+/* typical device breakpoints 
+
+    small screens: max-width: 600px
+    phone: max-width: 600px - 768px
+    tablet: max-width: 768px - 992px
+    desktop: max-width: 992px - 1024px
+    extra large screens: above 1024px
+*/
+
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+   
+    .nav__menu-list ul{
+        display: flex;
+        gap: 2rem;
+    }
+    .image img{
+        width: 44rem;
+    }
+
+    .cadastro__text{
+        max-width: 60rem;  
+    }
+    
+    .cadastro__text h1{
+        font-size: 4.4rem;
+    }
+    
+    .cadastro__text p{
+        font-size: 1.8rem;
+    }
+    .formulario form{
+        gap: 1rem;
+        align-items: center;
+        flex-direction: row;
+    }
+    .formulario__input-email{
+        width: 34rem;
+    }
+    .formulario__btn-register-mobile{
+        width: 15rem;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+   
+    .image img{
+        width: 44rem;
+    }
+    
+    .nav__menu-list ul{
+        display: flex;
+        gap: 2rem;
+    }
+
+    .cadastro__text{
+        max-width: 60rem;  
+    }
+    
+    .cadastro__text h1{
+        font-size: 4.8rem;
+    }
+    
+    .cadastro__text p{
+        font-size: 2rem;
+    }
+    .formulario form{
+        align-items: center;
+        gap: 1rem;
+        flex-direction: row;
+    }
+    .formulario__input-email{
+        width: 34rem;
+    }
+    .formulario__btn-register-mobile{
+        width: 15rem;
+    }
+
+    footer{
+        flex-direction: row;
+        align-items: center;
+        gap: 13rem;
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1024px) {
+    
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav__icon-menu{
+        display: none;
+    }
+
+    .nav__menu-list{
+        margin-top: 0rem;
+        flex-direction: row;
+        gap: 10rem;
+        align-items: center;
+        overflow: visible;
+        height: auto;
+     }
+
+     .nav__menu-list ul {
+        display: flex;
+        margin-bottom: 0rem;
+    } 
+
+    .nav__menu-list ul li{
+        margin: 0rem 0rem 0rem 2rem;
+    }
+
+    .container__register{
+        
+        margin-top: 0rem;
+    }
+
+    .image img{
+        width: 45rem;
+    }
+
+    .cadastro__text{
+        max-width: 60rem;  
+    }
+    
+    .cadastro__text h1{
+        font-size: 4.8rem;
+    }
+    
+    .cadastro__text p{
+        font-size: 2.2rem;
+    }
+
+    .formulario form{
+        align-items: center;
+        gap: 1rem;
+        flex-direction: row;
+    }
+
+    .formulario__input-email{
+        width: 34rem;
+    }
+
+    .formulario__btn-register-mobile{
+        width: 15rem;
+    }
+
+    footer{
+        flex-direction: row;
+        align-items: center;
+        gap: 13rem;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    header{
+        max-width: 109.0rem;
+        width: 100%;
+        margin: auto;
+    }
+    
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .container__btn-hiring:hover{
+        opacity: 0.8;
+    }
+
+    .nav__icon-menu{
+        display: none;
+    }
+
+    .nav__menu-list{
+        margin-top: 0rem;
+        flex-direction: row;
+        gap: 10rem;
+        align-items: center;
+        overflow: visible;
+        height: auto;
+       
+     }
+
+    .nav__menu-list ul {
+        display: flex;
+        margin-bottom: 0rem;
+    } 
+
+    .nav__menu-list ul li{
+        margin: 0rem 0rem 0rem 2rem;
+    }
+
+    .nav__menu-list ul li a:hover{
+        color: var(--secondary);
+        border: 2px solid var(--secondary);
+        transition: all 0.4s ease;
+        border-radius: 0.5rem;
+        padding: 0.8rem;
+    }
+
+    .container__register{
+        
+        margin-top: 0rem;
+    }
+    .buttom-register:hover{
+        background-color: var(--primary);
+        border: 2px solid var(--secondary);
+        color: var(--secondary);
+        transition: all 0.2s ease;
+        
+    }
+
+
+    main{
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 3rem;
+        max-width: 109.0rem;
+        width: 100%;
+        margin: auto;
+    }
+
+    .image img{
+        width: 45rem;
+    }
+
+    .cadastro__text{
+        max-width: 60rem;  
+    }
+    
+    .cadastro__text h1{
+        font-size: 4.8rem;
+    }
+    
+    .cadastro__text p{
+        font-size: 2.2rem;
+    }
+
+    .formulario form{
+        align-items: center;
+        gap: 1rem;
+        flex-direction: row;
+    }
+
+    .formulario__input-email{
+        width: 34rem;
+    }
+
+    .formulario__btn-register-mobile{
+        width: 15rem;
+    }
+
+    footer{
+        max-width: 109.0rem;
+        width: 100%;
+        margin: auto;
+        flex-direction: row;
+        align-items: center;
+        gap: 13rem;
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+    }
+    
+    .footer__social-media ul li a:hover{
+        color: var(--secondary);
+        transition: all 0.3s;
+       
+    }
+}
