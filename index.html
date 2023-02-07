@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0" />
     <title>Challenge Codewell - Hosterr Starter Files</title>
 </head>
@@ -38,15 +39,47 @@
             </div>
         </nav>
     </header>
-    <div class="hero">
-        <div class="hero__box">
-            <img class="hero__blue hero__images" src="images/Blue Shape.svg" alt="">
-            <img class="hero__pink hero__images" src="images/Pink Shape.svg" alt="">
-            <img class="hero__purple hero__images" src="images/Purple Shape.svg" alt="">
-            <img class="hero__one hero__images" src="images/Hero Image (Model).png" alt="">
-        </div>
-    </div>
 
+    <main>
+        <section class="section-image">
+            <div class="image">
+                <img src="images/desktop-hero.png" alt="">
+            </div>
+        </section>
+
+        <section class="cadastro">
+            <div class="cadastro__text">
+                <h1>Host your website in less than 5 minutes.</h1>
+                <p>With Hosterr, get your website up and runnig in no less than 5 minutes with the most competitive pricing packages available online.</p>
+            </div>
+            <div class="formulario">
+                <form action="" autocomplete="on">
+                    <input class="formulario__input-email" type="email" name="email" id="idEmail" required placeholder="Enter e-mail address" autocomplete="email">
+                    <input class="buttom-register formulario__btn-register-mobile" type="submit" value="Join Waitlist">
+                </form>
+                <div class="formulario__check-span">
+                    <img src="images/Checkmark.svg" alt="botão de checagem">
+                    <span>No spam, ever. Unsubscribe anytime.</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer__social-media">
+            <ul>
+                <li><a href="">Facebook</a></li>
+                <li><a href="">Instagram</a></li>
+                <li><a href="">Twitter</a></li>
+            </ul>
+        </div>
+        <div class="footer__specialist">
+            <img src="images/Help Avatar.svg" alt="avatar">
+            <p>Have any questions? <br>
+                <strong>Talk to a specialist</strong>
+            </p>
+        </div>
+    </footer>
 
 
 
